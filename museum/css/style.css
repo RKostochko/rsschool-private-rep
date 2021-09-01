@@ -1,0 +1,64 @@
+@import url(fonts.css);
+@import url(reset.css);
+
+:root {
+	--bg-dark: #030303;
+	--dark-red: #710707;
+	--font-gold: #9d8665;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body{
+	color: #ffffff;
+	font-family: 'Roboto', sans-serif;
+}
+.section {
+	padding: 75px 0;
+}
+.dark-section {
+	background: var(--bg-dark);
+}
+.video-section {
+	padding-top: 90px;
+}
+
+.container {
+	margin: 0 auto;
+	max-width: 1440px;
+	padding: 0 20px;
+}
+
+.header-container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.header-logo{
+	background: url("/rsschool-private-rep/museum/assets/svg/logo.svg") no-repeat;
+	background-size: 49px 26px;
+}
+.logo-title {
+	text-transform: uppercase;
+	font-size: 28px;
+	margin: 0 0 0 70px;
+}
+
+.nav-list {
+	font-family: 'Forum', cursive;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	max-width: 720px;
+}
+.nav-item {
+	font-size: 22px;
+	font-weight: thin;
+	padding-right: 54px;
+	letter-spacing: 2px;
+}
+.nav-contacts {
+	padding: 0;
+}
