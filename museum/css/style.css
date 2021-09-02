@@ -35,6 +35,23 @@ h3 {
 	color: #000;
 }
 
+.gold-text {
+	color: var(--font-gold);
+}
+.underline-title {
+	position: relative;
+}
+.underline-title::after {
+	content: "";
+	position: absolute;
+	bottom: -28px;
+	left: 0;
+	right: 0;
+	height: 3px;
+	width: 100%;
+	background-color: var(--dark-red);
+}
+
 .section {
 	padding: 75px 0;
 }
@@ -131,19 +148,6 @@ h3 {
 .visiting-title h2 {
 	margin-bottom: 103px;
 }
-.underline-title {
-	position: relative;
-}
-.underline-title::after {
-	content: "";
-	position: absolute;
-	bottom: -28px;
-	left: 0;
-	right: 0;
-	height: 3px;
-	width: 100%;
-	background-color: var(--dark-red);
-}
 .visiting-cards {
 	display: flex;
 	flex-direction: row;
@@ -170,4 +174,25 @@ h3 {
 	font-size: 18px;
 	line-height: 21px;
 	margin-top: 10px;
+}
+
+/* Explore */
+.explore-container {
+	display: flex;
+	justify-content: space-between;
+}
+.explore-title {
+	color: #fff;
+	margin-bottom: 103px;
+}
+.explore-title.underline-title::after {
+	max-width: 660px;
+}
+.explore-text p {
+	max-width: 655px;
+	font-weight: 300;
+	font-size: 22px;
+	line-height: 38px;
+	margin-bottom: 25px;
+	letter-spacing: normal;
 }
