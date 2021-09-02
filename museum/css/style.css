@@ -11,10 +11,20 @@ html {
 	scroll-behavior: smooth;
 }
 
-body{
+body {
 	color: #ffffff;
-	font-family: 'Roboto', sans-serif;
+	font-family: "Roboto", sans-serif;
+	letter-spacing: 2px;
 }
+h2 {
+	font-family: "Forum", sans-serif;
+	font-size: 80px;
+	line-height: 90px;
+	letter-spacing: 5px;
+	text-transform: uppercase;
+	font-weight: normal;
+}
+
 .section {
 	padding: 75px 0;
 }
@@ -28,26 +38,33 @@ body{
 .container {
 	margin: 0 auto;
 	max-width: 1440px;
-	padding: 0 20px;
+	padding: 0 10px;
 }
 
+/* Header */
 .header-container {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	padding: 0 13px 0 10px;
 }
-.header-logo{
+.header-logo {
 	background: url("/rsschool-private-rep/museum/assets/svg/logo.svg") no-repeat;
-	background-size: 49px 26px;
+	background-size: 50px 34px;
+	background-position: 0 40%;
 }
 .logo-title {
 	text-transform: uppercase;
 	font-size: 28px;
 	margin: 0 0 0 70px;
+	font-family: "Forum", cursive;
+	letter-spacing: 5px;
 }
 
+.header-nav {
+	margin: 58px 0;
+}
 .nav-list {
-	font-family: 'Forum', cursive;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -55,10 +72,44 @@ body{
 }
 .nav-item {
 	font-size: 22px;
-	font-weight: thin;
+	font-weight: 200;
 	padding-right: 54px;
-	letter-spacing: 2px;
 }
 .nav-contacts {
 	padding: 0;
+}
+
+/* Welcome */
+.welcome-container {
+	height: 810px;
+	background: url("/rsschool-private-rep/museum/assets/img/monaliza.png") no-repeat;
+	background-position: calc(100%) calc(100% - 60px);
+}
+.welcome-info {
+	padding: 150px 0 272px 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.welcome-text p {
+	font-style: normal;
+	font-weight: 300;
+	font-size: 28px;
+	line-height: 33px;
+	margin-top: 25px;
+}
+.welcome-link {
+	width: 360px;
+	height: 75px;
+	background: var(--dark-red);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 10px;
+	margin-top: 75px;
+}
+.welcome-btn {
+	font-weight: 200;
+	font-size: 22px;
+	line-height: 26px;
 }
