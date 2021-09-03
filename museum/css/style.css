@@ -51,7 +51,13 @@ h3 {
 	width: 100%;
 	background-color: var(--dark-red);
 }
-
+.section-text {
+	font-weight: 300;
+	letter-spacing: normal;
+	font-size: 22px;
+	line-height: 38px;
+	color: #000;
+}
 .section {
 	padding: 75px 0;
 }
@@ -76,7 +82,7 @@ h3 {
 	padding: 0 13px 0 10px;
 }
 .header-logo {
-	background: url("/rsschool-private-rep/museum/assets/svg/logo.svg") no-repeat;
+	background: url("/museum/assets/svg/logo.svg") no-repeat;
 	background-size: 50px 34px;
 	background-position: 5px 50%;
 }
@@ -109,7 +115,7 @@ h3 {
 /* Welcome */
 .welcome-container {
 	height: 810px;
-	background: url("/rsschool-private-rep/museum/assets/img/monaliza.png") no-repeat;
+	background: url("/museum/assets/img/monaliza.png") no-repeat;
 	background-position: calc(100%) calc(100% - 60px);
 }
 .welcome-info {
@@ -190,9 +196,70 @@ h3 {
 }
 .explore-text p {
 	max-width: 655px;
-	font-weight: 300;
-	font-size: 22px;
-	line-height: 38px;
 	margin-bottom: 25px;
-	letter-spacing: normal;
+	color: #fff;
+}
+
+/* Video */
+.video-info {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 75px;
+}
+.video-text {
+	max-width: 720px;
+}
+.player-control {
+	display: flex;
+	align-items: center;
+	padding: 25px 30px;
+	background: #000;
+}
+.volume {
+	display: flex;
+}
+.progress {
+	background: linear-gradient(to right, var(--dark-red) 0%, var(--dark-red) 54%, #C4C4C4 40%,#C4C4C4 100%);
+	height: 8px;
+	width: 929px;
+	outline: none;
+	transition: background 450ms ease-in;
+	-webkit-appearance: none;
+	margin: 0 50px;
+}
+
+.progress::-webkit-slider-thumb {
+	width: 15px;
+	height: 15px;
+	border-radius: 50%;
+	-webkit-appearance: none;
+	cursor: ew-resize;
+	background: #fff;
+}
+.volume-progress {
+	width: 155px;
+	background: linear-gradient(to right, var(--dark-red) 0%, var(--dark-red) 40%, #C4C4C4 40%,#C4C4C4 100%);
+}
+
+.video-links {
+	margin: 40px 0;
+	display: flex;
+	column-gap: 42px;
+}
+
+.video-buttons {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	column-gap: 20px;
+}
+.eclipse {
+	background: #999999;
+	height: 12px;
+	width: 12px;
+	border-radius: 50%;
+}
+.eclipse-active {
+	background: #000;
 }

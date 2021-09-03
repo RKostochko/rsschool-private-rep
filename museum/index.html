@@ -101,7 +101,7 @@
 		</section>
 		<section class="explore section dark-section" id="explore">
 			<div class="container explore-container">
-				<div class="explore-text">
+				<div class="explore-text section-text">
 					<h2 class="explore-title underline-title">Picture Explore</h2>
 					<p>Las Meninas is a 1656 painting by Diego Velázquez, the leading artist of the Spanish Golden Age.</p>
 					<p>It was cleaned in 1984 to remove a <span class="gold-text">"yellow veil"</span> of dust that had
@@ -115,8 +115,40 @@
 				</div>
 			</div>
 		</section>
-		<section class="video section" id="video">
-			<div class="container"></div>
+		<section class="video section video-section" id="video">
+			<div class="container video-container">
+				<div class="video-info">
+					<h2 class="video-title">Video Journey</h2>
+					<p class="section-text video-text">Enter and visit one of the most famous museums in the world and enjoy
+						masterpieces
+						such as Mona Lisa
+						or Hammurabi's Code</p>
+				</div>
+				<div class="video-player">
+					<img src="/museum/assets/img/video-main.png" alt="video player image" class="player-img">
+					<div class="player-control">
+						<img src="/museum/assets/svg/play.svg" alt="play video">
+						<input type="range" value="54" min="0" max="100" step="1" class="progress video-progress">
+						<img src="/museum/assets/svg/volume-icon.svg" alt="volume icon">
+						<input type="range" value="42" min="0" max="100" step="1" class="progress volume-progress">
+						<img src="/museum/assets/svg/expand.svg" alt="expland video" class="expand">
+					</div>
+				</div>
+				<div class="video-links">
+					<iframe width="452" height="254" src="https://www.youtube.com/embed/aWmJ5DgyWPI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					<iframe width="452" height="254" src="https://www.youtube.com/embed/Vi5D6FKhRmo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					<iframe width="452" height="254" src="https://www.youtube.com/embed/NOhDysLnTvY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				</div>
+				<div class="video-buttons">
+					<img src="/museum/assets/svg/left-stroke.svg" alt="left stroke">
+					<div class="eclipse eclipse-active"></div>
+					<div class="eclipse"></div>
+					<div class="eclipse"></div>
+					<div class="eclipse"></div>
+					<div class="eclipse"></div>
+					<img src="/museum/assets/svg/right-stroke.svg" alt="right stroke">
+				</div>
+			</div>
 		</section>
 		<section class="gallery section dark-section" id="gallery">
 			<div class="container"></div>
@@ -132,6 +164,8 @@
 	<footer class="footer">
 
 	</footer>
+
+	<script src="main.js"></script>
 </body>
 
 </html>
