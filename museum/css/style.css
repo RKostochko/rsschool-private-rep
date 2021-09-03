@@ -1,0 +1,509 @@
+@import url(fonts.css);
+@import url(reset.css);
+
+:root {
+	--bg-dark: #030303;
+	--dark-red: #710707;
+	--font-gold: #9d8665;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	color: #ffffff;
+	font-family: "Roboto", sans-serif;
+	letter-spacing: 2px;
+}
+h1 {
+	text-transform: uppercase;
+	font-size: 28px;
+	margin: 0 0 0 75px;
+	font-family: "Forum", cursive;
+	font-weight: normal;
+	letter-spacing: 5px;
+}
+h2 {
+	font-family: "Forum", sans-serif;
+	font-size: 80px;
+	line-height: 90px;
+	letter-spacing: 5px;
+	text-transform: uppercase;
+	font-weight: normal;
+	color: var(--font-gold);
+}
+h3 {
+	font-family: "Forum", sans-serif;
+	font-weight: normal;
+	font-size: 32px;
+	line-height: 35px;
+	letter-spacing: 5px;
+	text-transform: uppercase;
+	color: #000;
+}
+h4 {
+	font-weight: bold;
+	font-size: 28px;
+	line-height: 33px;
+}
+iframe {
+	border: none;
+}
+
+.gold-text {
+	color: var(--font-gold);
+}
+.underline-title {
+	position: relative;
+}
+.underline-title::after {
+	content: "";
+	position: absolute;
+	bottom: -28px;
+	left: 0;
+	right: 0;
+	height: 3px;
+	width: 100%;
+	background-color: var(--dark-red);
+}
+.section-text {
+	font-weight: 300;
+	letter-spacing: normal;
+	font-size: 22px;
+	line-height: 38px;
+	color: #000;
+}
+.section {
+	padding: 75px 0;
+}
+.dark-section {
+	background: var(--bg-dark);
+}
+.video-section {
+	padding-top: 90px;
+}
+
+.container {
+	margin: 0 auto;
+	max-width: 1455px;
+	padding: 0 0 0 15px;
+}
+
+/* Header */
+.header-container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 13px 0 10px;
+}
+.header-logo {
+	background: url("/museum/assets/svg/logo.svg") no-repeat;
+	background-size: 50px 34px;
+	background-position: 5px 50%;
+}
+.logo-title {
+	text-transform: uppercase;
+	font-size: 28px;
+	margin: 0 0 0 75px;
+	font-family: "Forum", cursive;
+	letter-spacing: 5px;
+}
+
+.header-nav {
+	margin: 58px 0;
+}
+.nav-list {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	max-width: 740px;
+}
+.nav-item {
+	font-size: 22px;
+	font-weight: 200;
+	padding-right: 56px;
+}
+.nav-contacts {
+	padding: 0;
+}
+
+/* Welcome */
+.welcome-container {
+	height: 810px;
+	background: url("/museum/assets/img/monaliza.png") no-repeat;
+	background-position: calc(100%) calc(100% - 60px);
+}
+.welcome-info {
+	padding: 150px 0 272px 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.welcome-text h2 {
+	color: #fff;
+}
+.welcome-text p {
+	font-style: normal;
+	font-weight: 300;
+	font-size: 28px;
+	line-height: 33px;
+	margin-top: 25px;
+}
+.welcome-link {
+	width: 360px;
+	height: 75px;
+	background: var(--dark-red);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 10px;
+	margin-top: 75px;
+}
+.welcome-btn {
+	font-weight: 200;
+	font-size: 22px;
+	line-height: 26px;
+}
+
+/* Visiting */
+.visiting-title h2 {
+	margin-bottom: 103px;
+}
+.visiting-cards {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	gap: 78px 60px;
+}
+.visiting-card {
+	color: #000;
+}
+.card-image {
+	width: 440px;
+	height: 285px;
+	margin-bottom: 25px;
+}
+.card-title.underline-title::after {
+	bottom: -9px;
+	max-width: 300px;
+	height: 2px;
+}
+.card-text {
+	margin-top: 21px;
+}
+.card-minitext {
+	font-size: 18px;
+	line-height: 21px;
+	margin-top: 10px;
+}
+
+/* Explore */
+.explore-container {
+	display: flex;
+	justify-content: space-between;
+}
+.explore-title {
+	color: #fff;
+	margin-bottom: 103px;
+}
+.explore-title.underline-title::after {
+	max-width: 660px;
+}
+.explore-text p {
+	max-width: 655px;
+	margin-bottom: 25px;
+	color: #fff;
+}
+
+/* Video */
+.video-info {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 75px;
+}
+.video-text {
+	max-width: 720px;
+}
+.player-control {
+	display: flex;
+	align-items: center;
+	padding: 25px 30px;
+	background: #000;
+}
+.volume {
+	display: flex;
+}
+.progress {
+	background: linear-gradient(to right, var(--dark-red) 0%, var(--dark-red) 54%, #C4C4C4 40%,#C4C4C4 100%);
+	height: 8px;
+	width: 929px;
+	outline: none;
+	transition: background 450ms ease-in;
+	-webkit-appearance: none;
+	margin: 0 50px;
+}
+
+.progress::-webkit-slider-thumb {
+	width: 15px;
+	height: 15px;
+	border-radius: 50%;
+	-webkit-appearance: none;
+	cursor: ew-resize;
+	background: #fff;
+}
+.volume-progress {
+	width: 155px;
+	background: linear-gradient(to right, var(--dark-red) 0%, var(--dark-red) 40%, #C4C4C4 40%,#C4C4C4 100%);
+}
+
+.video-links {
+	margin: 40px 0;
+	display: flex;
+	column-gap: 42px;
+}
+
+.video-buttons {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	column-gap: 20px;
+}
+.eclipse {
+	background: #999999;
+	height: 12px;
+	width: 12px;
+	border-radius: 50%;
+}
+.eclipse-active {
+	background: #000;
+}
+
+/* Art Gallery */
+.gallery {
+	padding-bottom: 0;
+	height: 2200px;
+}
+.gallery-title {
+	color: #fff; 
+	margin-bottom: 75px;
+}
+.columns-gallery {
+	display: flex;
+	column-gap: 36px;
+}
+.column-gallery {
+	display: flex;
+	flex-direction: column;
+	row-gap: 24px;
+}
+.first-column, .third-column {
+	padding: 50px 0 0 0;
+}
+
+/* Tickets */
+.tickets {
+	padding-bottom: 60px;
+}
+.tickets-title {
+	margin-bottom: 103px;
+}
+.tickets-main {
+	display: flex;
+	justify-content: space-between;
+}
+.tickets-info {
+	max-width: 100%;
+	display: flex;
+	margin-left: 60px;
+	color: #000;
+	font-size: 22px;
+	line-height: 26px;
+	font-weight: 300;
+	letter-spacing: normal;
+}
+.form_radio {
+	margin-top: 50px;
+}
+.form_radio input[type=radio] {
+	display: none;
+}
+.form_radio label {
+	display: inline-block;
+	cursor: pointer;
+	position: relative;
+	padding-left: 42px;
+	margin-right: 0;	
+	user-select: none;
+}
+.form_radio label:before {
+	content: "";
+	display: inline-block;
+	width: 17px;
+	height: 18px;
+	position: absolute;
+	left: 2px;
+	bottom: 3px;
+	background: url(/museum/assets/svg/radio.png) 0 0 no-repeat;
+}
+/* Checked */
+.form_radio input[type=radio]:checked + label:before {
+	background: url(/museum/assets/svg/radio-checked.svg) 0 0 no-repeat;
+	transition: all 0.65s;
+}
+ 
+/* Hover */
+.form_radio label:hover:before {
+	filter: brightness(120%);
+}
+ 
+.number {
+	all: unset;
+	width: 3em;
+	text-align: center;
+	margin-left: 5px;
+}
+
+.ticket-buy { 
+	margin-left: 235px;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+}
+.tickets-btn {
+	margin: 14px 0 0 0;
+	padding: 6px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 150px;
+	height: 50px;
+	border: 3px solid #000;
+}
+.ticket-btn {
+	font-size: 32px;
+	line-height: 37px;
+	font-weight: normal;
+	border: none;
+	background: #fff;
+}
+.basic-tickets {
+	margin: 10px 0 35px 0;
+}
+.total {
+	letter-spacing: 1.65px;
+	margin: 50px 0;
+}
+.buy-btn {
+	width: 175px;
+	height: 50px;
+	border-radius: 2px;
+	background-color: #000;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	letter-spacing: 2px;
+}
+
+/* Paralax */
+.paralax {
+	max-width: 1920px;
+	height: 400px;
+	background: url(/museum/assets/img/parallax\ 1.png) no-repeat;
+}
+
+/* Contacts */
+.contacts {
+	padding: 90px 0 75px 0;	
+}
+.contact-info-title {
+	margin: 0 0 35px 0;
+	color: #000;
+	letter-spacing: normal;
+}
+.contact-info {
+	margin: 104px 0 0 0;
+	display: flex;
+	justify-content: space-between;
+}
+.contact-text p{
+	font-size: 23px;
+	font-weight: 300;
+	line-height: 26px;
+	padding-left: 2px;
+	letter-spacing: normal;
+	color: #000;
+	margin: 20px 0 0 0;
+}
+
+
+/* Footer */
+.footer-container {
+	display: flex;
+	flex-direction: column;
+}
+
+.high-footer {
+	display: flex;
+	margin: 0 0 81px 0;
+}
+
+.footer-logo{
+	background-position: 3px 9px;
+}
+.footer-title {
+	margin-top: 4px;
+}
+
+.footer-lists {
+	width: 359px;
+	display: flex;
+	justify-content: space-between;
+	font-weight: 200;
+	font-size: 22px;
+	line-height: 50px;
+	margin: 0 401px 0 145px;
+}
+
+.footer-links {
+	display: flex;
+	justify-content: center;
+	margin: 88px 0 0 0;
+	max-width: 336px;
+	column-gap: 24px;
+}
+.footer-link{
+	max-width: 48px;
+	height: 48px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 50%;
+	border: 1px solid #fff;
+}
+.footer-link:hover {
+	border: 1px solid var(--font-gold);
+	transition: .2s;
+}
+.footer-link img {
+	margin: 12px;
+}
+.footer-link img:hover {
+	transition: 1s;
+}
+
+
+.footer.underline-title::after {
+	bottom: 139px;
+	height: 1px;
+	background-color: #fff;
+}
+
+.low-footer {
+	display: flex;
+	justify-content: space-between;
+	font-weight: 200;
+	font-size: 22px;
+	line-height: 22px;
+}
