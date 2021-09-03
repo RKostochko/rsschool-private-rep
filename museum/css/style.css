@@ -404,7 +404,7 @@ h4 {
 
 /* Contacts */
 .contacts {
-	padding: 90px 0;	
+	padding: 90px 0 75px 0;	
 }
 .contact-info-title {
 	margin: 0 0 35px 0;
@@ -424,4 +424,75 @@ h4 {
 	letter-spacing: normal;
 	color: #000;
 	margin: 20px 0 0 0;
+}
+
+
+/* Footer */
+.footer-container {
+	display: flex;
+	flex-direction: column;
+}
+
+.high-footer {
+	display: flex;
+	margin: 0 0 81px 0;
+}
+
+.footer-logo{
+	background-position: 3px 9px;
+}
+.footer-title {
+	margin-top: 4px;
+}
+
+.footer-lists {
+	width: 359px;
+	display: flex;
+	justify-content: space-between;
+	font-weight: 200;
+	font-size: 22px;
+	line-height: 50px;
+	margin: 0 401px 0 145px;
+}
+
+.footer-links {
+	display: flex;
+	justify-content: center;
+	margin: 88px 0 0 0;
+	max-width: 336px;
+	column-gap: 24px;
+}
+.footer-link{
+	max-width: 48px;
+	height: 48px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 50%;
+	border: 1px solid #fff;
+}
+.footer-link:hover {
+	border: 1px solid var(--font-gold);
+	transition: .2s;
+}
+.footer-link img {
+	margin: 12px;
+}
+.footer-link img:hover {
+	transition: 1s;
+}
+
+
+.footer.underline-title::after {
+	bottom: 139px;
+	height: 1px;
+	background-color: #fff;
+}
+
+.low-footer {
+	display: flex;
+	justify-content: space-between;
+	font-weight: 200;
+	font-size: 22px;
+	line-height: 22px;
 }
