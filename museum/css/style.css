@@ -292,7 +292,9 @@ h4 {
 }
 
 /* Tickets */
-
+.tickets {
+	padding-bottom: 60px;
+}
 .tickets-title {
 	margin-bottom: 103px;
 }
@@ -391,4 +393,35 @@ h4 {
 	justify-content: center;
 	align-items: center;
 	letter-spacing: 2px;
+}
+
+/* Paralax */
+.paralax {
+	max-width: 1920px;
+	height: 400px;
+	background: url(/museum/assets/img/parallax\ 1.png) no-repeat;
+}
+
+/* Contacts */
+.contacts {
+	padding: 90px 0;	
+}
+.contact-info-title {
+	margin: 0 0 35px 0;
+	color: #000;
+	letter-spacing: normal;
+}
+.contact-info {
+	margin: 104px 0 0 0;
+	display: flex;
+	justify-content: space-between;
+}
+.contact-text p{
+	font-size: 23px;
+	font-weight: 300;
+	line-height: 26px;
+	padding-left: 2px;
+	letter-spacing: normal;
+	color: #000;
+	margin: 20px 0 0 0;
 }
