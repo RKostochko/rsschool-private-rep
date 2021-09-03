@@ -263,3 +263,24 @@ h3 {
 .eclipse-active {
 	background: #000;
 }
+
+/* Art Gallery */
+.gallery {
+	padding-bottom: 0;
+}
+.gallery-title {
+	color: #fff; 
+	margin-bottom: 75px;
+}
+.columns-gallery {
+	display: flex;
+	column-gap: 36px;
+}
+.column-gallery {
+	display: flex;
+	flex-direction: column;
+	row-gap: 24px;
+}
+.first-column, .third-column {
+	padding: 50px 0 0 0;
+}
