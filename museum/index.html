@@ -158,13 +158,13 @@
 					<img src="/museum/assets/img/galery2 1.png" alt="gallery picture">
 					<img src="/museum/assets/img/galery9 1.png" alt="gallery picture">
 					<img src="/museum/assets/img/galery4 1.png" alt="gallery picture">
-					<img src="/museum/assets/img/galery6 1.png" alt="gallery picture">
+					<img src="/museum/assets/img/galery6 1.png" alt="gallery picture" height="242px">
 				</div>
 				<div class="column-gallery second-column">
 					<img src="/museum/assets/img/galery1 1.png" alt="gallery picture">
 					<img src="/museum/assets/img/galery8 1.png" alt="gallery picture">
 					<img src="/museum/assets/img/galery3 1.png" alt="gallery picture">
-					<img src="/museum/assets/img/galery5 1.png" alt="gallery picture">
+					<img src="/museum/assets/img/galery5 1.png" alt="gallery picture" height="292px">
 				</div>
 				<div class="column-gallery third-column">
 					<img src="/museum/assets/img/galery7 1.png" alt="gallery picture">
@@ -177,7 +177,53 @@
 		</section>
 		<section class="tickets section" id="tickets">
 			<div class="container">
+				<h2 class="underline-title tickets-title">Buy tickets</h2>
+				<div class="tickets-main">
+				<div class="tickets-picture">
+					<img src="/museum/assets/img/tickets.png" alt="tickets picture">
+				</div>
+				<div class="tickets-info">
+					<div class="ticket-type">
+						<h4>Ticket Type</h4>
+						<div class="form_radio">
+							<input id="radio-1" type="radio" name="radio" value="1" checked>
+							<label for="radio-1">Permanent exhibition</label>
+						</div>
+						<div class="form_radio">
+							<input id="radio-2" type="radio" name="radio" value="2" checked>
+							<label for="radio-2">Temporary exhibition</label>
+						</div>
+						<div class="form_radio">
+							<input id="radio-3" type="radio" name="radio" value="3" checked>
+							<label for="radio-3">Combined Admission</label>
+						</div>
+					</div>
+					<div class="ticket-buy">
+						<h4 class="buy-title">Amount</h4>
+						<div class="basic-tickets">
+							<p>Basic 18+</p>
+							<div class="tickets-btn">
+								<button type="button" class="ticket-btn" onclick="this.nextElementSibling.stepDown()">—</button>
+								<input type="number" min="0" max="20" value="1" readonly class="number">
+								<button type="button" class="ticket-btn" onclick="this.previousElementSibling.stepUp()">+</button>
+							</div>
+						</div>
+						<div class="senior-tickets">
+							<p>Senior 65+</p>
+							<div class="tickets-btn">
+								<button type="button" class="ticket-btn" onclick="this.nextElementSibling.stepDown()">—</button>
+								<input type="number" min="0" max="20" value="1" readonly class="number">
+								<button type="button" class="ticket-btn" onclick="this.previousElementSibling.stepUp()">+</button>
+							</div>							
+						</div>
+						<h4 class="total">Total €220</h4>
+						<div class="buy-btn">
+							<a href="#">Buy Now</a>
+						</div>
+					</div>
+				</div>
 			</div>
+		</div>
 		</section>
 		<section class="contacts section" id="contacts">
 			<div class="container"></div>

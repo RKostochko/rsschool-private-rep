@@ -34,6 +34,11 @@ h3 {
 	text-transform: uppercase;
 	color: #000;
 }
+h4 {
+	font-weight: bold;
+	font-size: 28px;
+	line-height: 33px;
+}
 
 .gold-text {
 	color: var(--font-gold);
@@ -267,6 +272,7 @@ h3 {
 /* Art Gallery */
 .gallery {
 	padding-bottom: 0;
+	height: 2200px;
 }
 .gallery-title {
 	color: #fff; 
@@ -283,4 +289,106 @@ h3 {
 }
 .first-column, .third-column {
 	padding: 50px 0 0 0;
+}
+
+/* Tickets */
+
+.tickets-title {
+	margin-bottom: 103px;
+}
+.tickets-main {
+	display: flex;
+	justify-content: space-between;
+}
+.tickets-info {
+	max-width: 100%;
+	display: flex;
+	margin-left: 60px;
+	color: #000;
+	font-size: 22px;
+	line-height: 26px;
+	font-weight: 300;
+	letter-spacing: normal;
+}
+.form_radio {
+	margin-top: 50px;
+}
+.form_radio input[type=radio] {
+	display: none;
+}
+.form_radio label {
+	display: inline-block;
+	cursor: pointer;
+	position: relative;
+	padding-left: 42px;
+	margin-right: 0;	
+	user-select: none;
+}
+.form_radio label:before {
+	content: "";
+	display: inline-block;
+	width: 17px;
+	height: 18px;
+	position: absolute;
+	left: 2px;
+	bottom: 3px;
+	background: url(/museum/assets/svg/radio.png) 0 0 no-repeat;
+}
+/* Checked */
+.form_radio input[type=radio]:checked + label:before {
+	background: url(/museum/assets/svg/radio-checked.svg) 0 0 no-repeat;
+	transition: all 0.65s;
+}
+ 
+/* Hover */
+.form_radio label:hover:before {
+	filter: brightness(120%);
+}
+ 
+.number {
+	all: unset;
+	width: 3em;
+	text-align: center;
+	margin-left: 5px;
+}
+
+.ticket-buy { 
+	margin-left: 235px;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+}
+.tickets-btn {
+	margin: 14px 0 0 0;
+	padding: 6px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 150px;
+	height: 50px;
+	border: 3px solid #000;
+}
+.ticket-btn {
+	font-size: 32px;
+	line-height: 37px;
+	font-weight: normal;
+	border: none;
+	background: #fff;
+}
+.basic-tickets {
+	margin: 10px 0 35px 0;
+}
+.total {
+	letter-spacing: 1.65px;
+	margin: 50px 0;
+}
+.buy-btn {
+	width: 175px;
+	height: 50px;
+	border-radius: 2px;
+	background-color: #000;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	letter-spacing: 2px;
 }
